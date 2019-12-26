@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flex</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body{
+            margin: 0px;
+        }
+        .box {
+            display: flex;
+            height: 100%;
+        }
+        .item {
+            flex-grow: 1;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #FFF;
+            border: 1px solid #eee;
+            background-color: #999;
+            flex-shrink: 0;  /* 1 / 0*/
+        }
+        .item:first-child {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>

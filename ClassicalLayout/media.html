@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>悬挂式布局</title>
+    <style>
+    .media-wrapper {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .media-figure {
+        margin-right: 1em;
+        width: 100px;
+        height: 100px;
+        background-color: bisque;
+    }
+    .media-body {
+        flex: 1;
+    }
+
+    .media-wrapper.right {
+        align-items: flex-end;
+    }
+
+    .media-figure.center {
+        align-self: center;
+    }
+
+    .media-figure.left {
+        margin-right: 0px;
+        margin-left: 1em;
+    }
+    </style>
+</head>
+<body>
+    <div class="media-wrapper">
+        <div class="media-figure"></div>
+        <div class="media-body">Life pressures and modern electronics are taking away our time for conversation. "Just scan the QR code/open the app and you can enjoy our service. "Handwritten menus are being replaced by interactive ordering systems that don't require you to say a word to communicate your needs; Digital maps have taken the place of asking passers-by for directions and having to interpret their gesticulations; Electronic payment is taking over from cash, meaning you never have to wait for change or hear the shopkeeper say that they've run out.</div>
+    </div>
+
+    <div class="media-wrapper">
+        <div class="media-body">Life pressures and modern electronics are taking away our time for conversation. "Just scan the QR code/open the app and you can enjoy our service. "Handwritten menus are being replaced by interactive ordering systems that don't require you to say a word to communicate your needs; Digital maps have taken the place of asking passers-by for directions and having to interpret their gesticulations; Electronic payment is taking over from cash, meaning you never have to wait for change or hear the shopkeeper say that they've run out.</div>
+        <div class="media-figure left"></div>
+    </div>
+
+    <div class="media-wrapper right">
+        <div class="media-figure"></div>
+        <div class="media-body">Life pressures and modern electronics are taking away our time for conversation. "Just scan the QR code/open the app and you can enjoy our service. "Handwritten menus are being replaced by interactive ordering systems that don't require you to say a word to communicate your needs; Digital maps have taken the place of asking passers-by for directions and having to interpret their gesticulations; Electronic payment is taking over from cash, meaning you never have to wait for change or hear the shopkeeper say that they've run out.</div>
+    </div>
+
+    <div class="media-wrapper right">
+        <div class="media-body">Life pressures and modern electronics are taking away our time for conversation. "Just scan the QR code/open the app and you can enjoy our service. "Handwritten menus are being replaced by interactive ordering systems that don't require you to say a word to communicate your needs; Digital maps have taken the place of asking passers-by for directions and having to interpret their gesticulations; Electronic payment is taking over from cash, meaning you never have to wait for change or hear the shopkeeper say that they've run out.</div>
+        <div class="media-figure left"></div>
+    </div>
+
+    <div class="media-wrapper">
+        <div class="media-figure center"></div>
+        <div class="media-body">Life pressures and modern electronics are taking away our time for conversation. "Just scan the QR code/open the app and you can enjoy our service. "Handwritten menus are being replaced by interactive ordering systems that don't require you to say a word to communicate your needs; Digital maps have taken the place of asking passers-by for directions and having to interpret their gesticulations; Electronic payment is taking over from cash, meaning you never have to wait for change or hear the shopkeeper say that they've run out.</div>
+    </div>
+
+    
+    <div class="media-wrapper right">
+        <div class="media-body">Life pressures and modern electronics are taking away our time for conversation. "Just scan the QR code/open the app and you can enjoy our service. "Handwritten menus are being replaced by interactive ordering systems that don't require you to say a word to communicate your needs; Digital maps have taken the place of asking passers-by for directions and having to interpret their gesticulations; Electronic payment is taking over from cash, meaning you never have to wait for change or hear the shopkeeper say that they've run out.</div>
+        <div class="media-figure center"></div>
+    </div>
+    <pre>
+            .media-wrapper {
+                margin-bottom: 8px;
+                display: flex;
+                align-items: flex-start;
+            }
+            .media-figure {
+                margin-right: 1em;
+                width: 100px;
+                height: 100px;
+                background-color: bisque;
+            }
+            .media-body {
+                flex: 1;
+            }
+        
+            .media-wrapper.right {
+                align-items: flex-end;
+            }
+        
+            .media-figure.center {
+                align-self: center;
+            }
+        
+            .media-figure.left {
+                margin-right: 0px;
+                margin-left: 1em;
+            }
+    </pre>
+</body>
+</html>

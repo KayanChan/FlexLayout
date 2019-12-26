@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>圣杯布局</title>
+    <style>
+    body {
+        margin: 0;
+    }
+    .HolyGrail {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        text-align: center;
+    }
+    header, footer {
+        /*flex: 1;*/
+        height: 150px;
+        background-color: #666;
+        color: #fff;
+    }
+    .HolyGrail-body {
+        display: flex;
+        flex: 1;
+    }
+    .HolyGrail-content {
+        flex: 1;
+        background-color: #d6d6d6;
+        color: #000;
+    }
+    .HolyGrail-nav, .HolyGrail-aside {
+        /* 两个边栏的宽度设为12em */
+        flex: 0 0 12em;
+    }
+    .HolyGrail-nav {
+        /* 导航放到最左边 */
+        order: -1;
+        background-color: #7bd;
+        color: #000;
+    }
+    .HolyGrail-aside {
+        background-color: #f63;
+        color: #000;
+    }
+    </style>
+</head>
+<body class="HolyGrail">
+    <header>#header</header>
+    <div class="HolyGrail-body">
+        <main class="HolyGrail-content">#center</main>
+        <nav class="HolyGrail-nav">#left</nav>
+        <aside class="HolyGrail-aside">#right</aside>
+    </div>
+    <footer>#footer</footer>
+    <pre style="text-align: left;">
+        body {
+            margin: 0;
+        }
+        .HolyGrail {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        header, footer {
+            /*flex: 1;*/
+            height: 150px;
+            background-color: #666;
+            color: #fff;
+        }
+        .HolyGrail-body {
+            display: flex;
+            flex: 1;
+        }
+        .HolyGrail-content {
+            flex: 1;
+            background-color: #d6d6d6;
+            color: #000;
+        }
+        .HolyGrail-nav, .HolyGrail-aside {
+            /* 两个边栏的宽度设为12em */
+            flex: 0 0 12em;
+        }
+        .HolyGrail-nav {
+            /* 导航放到最左边 */
+            order: -1;
+            background-color: #7bd;
+            color: #000;
+        }
+        .HolyGrail-aside {
+            background-color: #f63;
+            color: #000;
+        }
+    </pre>
+</body>
+</html>
